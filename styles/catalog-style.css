@@ -1,0 +1,94 @@
+.catalog.container{
+    padding: 60px 15px;
+}
+.breadcrumbs{
+    display: inline-block;
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.breadcrumbs a.active{
+    color: rgba(53, 181, 194, 1);
+}
+.catalog h4{
+    margin-bottom: 24px;
+}
+.selection-block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+.selection-block select{
+    width: 246px;
+    background-color: rgba(249, 249, 249, 1);
+    padding: 12px 50px 15px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(128, 128, 128, 1);
+    cursor: pointer;             
+    appearance: none; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('../assets/icons/Arrow\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+
+}
+.catalog-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.catalog-item{
+    width: calc((100% - 48px) / 3);
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 20px;
+    padding: 28px;
+}
+.catalog-item img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+.catalog-item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.catalog-item span{
+    display: block;
+    color: rgba(128, 128, 128, 1);
+    margin-bottom: 8px;
+}
+.catalog-btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: auto;
+}
+.catalog-btn .btn{
+    padding: 12px 24px;
+}
+.catalog-btn a{
+    color: rgba(53, 181, 194, 1) !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-out;
+}
+.catalog-btn a:hover{
+    border-bottom: 1px solid rgba(53, 181, 194, 1);
+}
+@media (max-width: 700px){
+    .catalog-wrapper{
+        flex-direction: column;
+    }
+    .catalog-item{
+        width: 100%;
+    }
+}

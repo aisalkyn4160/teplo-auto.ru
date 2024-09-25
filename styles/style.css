@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+@import url('header-style.css');
+@import url('banner-style.css');
+@import url('quality-style.css');
+@import url('advantages-style.css');
+@import url('reviews-style.css');
+@import url('faq-style.css');
+@import url('form-style.css');
+@import url('footer-style.css');
+
+@import url('catalog-style.css');
+@import url('card-style.css');
+/* -------------------------------------------reset-styles------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none; color: inherit;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+
+h1,h2, h3, h4, h5, h6{font-style: inherit;}
+
+/* -------------------------------------------main-styles------------------------------------------- */
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Manrope', sans-serif;
+	background-color: rgba(255, 255, 255, 1);
+	font-size: 16px;
+	line-height: 22.4px;
+	color: rgba(13, 13, 13, 1);
+}
+.no-scroll{
+	overflow: hidden;
+}
+.layout{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+
+}
+
+header{
+	flex-shrink: 0;
+}
+
+main{
+	flex-grow: 1;
+}
+section{
+	width: 100%;
+}
+footer{
+	flex-shrink: 0;
+}
+
+.container{
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn{
+	width: max-content;
+	background-color: rgba(53, 181, 194, 1);
+	padding: 13px 40px 15px 40px;
+	color:rgba(255, 255, 255, 1) !important;
+	border-radius: 8px;
+	font-weight: 600;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	gap: 10px;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+	background-color: rgba(35, 116, 124, 1);
+}
+h1{
+	font-family: 'Unbounded';
+	font-size: 60px;
+	font-weight: 500;
+	line-height: 72px;
+	text-align: left;
+	margin-bottom: 32px;
+}
+h1 span{
+	text-transform: uppercase;
+}
+h2{
+	font-family: 'Unbounded';
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 48px;
+	margin-bottom: 40px;
+}
+h4{
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 26px;
+}
+
+@media (max-width: 1050px){
+	h1{
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	h2{
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
+
+@media (max-width: 550px){
+	h1{
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	h2{
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 20px;
+	}
+	h4{
+		font-size: 16px;
+		line-height: 20px;
+	}
+}

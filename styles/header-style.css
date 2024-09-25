@@ -1,0 +1,182 @@
+.header{
+	padding: 30px 0;
+}
+
+.header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.logo{
+    width: 100px;
+}
+.burger{
+	display: none;
+	cursor: pointer;
+}
+.burger .close-menu{
+	display: none;
+}
+
+.header-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 28px;
+	white-space: nowrap;
+}
+.menu > li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-weight: 500;
+    color:rgba(13, 13, 13, 1);
+    position: relative;
+}
+.menu li a{
+    transition: color .3s;
+}
+.menu > li a:hover{
+    color: rgba(53, 181, 194, 1);
+}
+.menu > li:hover > .sub-menu{
+    display: flex;
+}
+.sub-menu{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+	z-index: 1;
+}
+.header-contacts{
+	width: max-content;
+	display: flex;
+    align-items: center;
+	justify-content: flex-end;
+    gap: 20px;
+    position: relative;
+}
+.basket{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.basket span{
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 17px;
+    background-color: rgba(53, 181, 194, 1);
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    color:rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 0px;
+}
+.header-contacts a{
+	white-space: nowrap;
+}
+.header-contacts .btn{
+	padding: 8px 24px 10px 24px;
+
+}
+.header-contacts .btn svg{
+	display: none;
+}
+.contacts-list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    gap: 10px;
+    font-weight: 400;
+}
+.contacts-list.active{
+	display: flex;
+}
+.mail{
+    color:rgba(40, 162, 190, 1);
+}
+
+@media (max-width: 1030px){
+	.header .container{
+		position: relative;
+	}
+	.header-contacts .btn span{
+		display: none;
+	}
+	.header-contacts .btn svg{
+		width: 26px;
+		display: block;
+	}
+	.header-contacts .btn{
+		padding: 8px;
+		border-radius: 50%;
+	}
+	.burger{
+		display: block;
+	}
+	.header-content{
+		flex-direction: column;
+		align-items: flex-start;
+		position: absolute;
+		top: 80px;
+		left: -300%;
+		transition: 0.5s;
+	}
+	.menu{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0;
+	}
+	.menu > li{}
+	.header.mobile-header{
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+	}
+	.header.mobile-header .header-content{
+		left: 15px;
+	}
+
+	.header.mobile-header .burger .close-menu{
+		display: block;
+	}
+
+	.header.mobile-header .burger .burger-menu{
+		display: none;
+	}
+}
+
+@media (max-width: 500px){
+	.header{
+		padding: 15px 0;
+	}
+}
