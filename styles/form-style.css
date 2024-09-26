@@ -62,6 +62,9 @@ form input::placeholder{
     .form-img{
         width: 50%;
     }
+    .form-img img{
+        margin-left: -25px;
+    }
     .form-content{
         width: 40%;
     }
