@@ -45,13 +45,12 @@
 @media (max-width: 740px){
     .banner{
         width: 100%;
-        flex-direction: column;
     }
     .banner-content{
         width: 100%;
     }
     .banner-img{
-        width: 100%;
+        display: none;
     }
 }
 
